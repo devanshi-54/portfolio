@@ -465,6 +465,7 @@ nav {
 
 /* Animation Frames */
 @keyframes navDrop {
+
     /* Starting Position */
     from {
         /* Completely invisible */
@@ -472,6 +473,7 @@ nav {
         /* 60px upar */
         transform: translateY(-60px);
     }
+
     /* Ending Position */
     to {
         /* Fully visible */
@@ -1139,25 +1141,32 @@ nav {
     ========================== */
 
     nav {
-        /* Navbar vertical bane */
         flex-direction: column;
-        /* Inner spacing */
-        padding: 20px;
-        /* Gap between logo & menu */
-        gap: 20px;
+        padding: 12px 20px;
+        /* Pela 20px hatu */
+        gap: 12px;
+        /* Pela 20px hatu */
+    }
+
+    .logo {
+        font-size: 24px;
+        /* Pela 30px */
     }
 
     nav ul {
-        /* Flex layout */
-        display: flex;
-        /* Next line ma jai sake */
-        flex-wrap: wrap;
-        /* Center align */
-        justify-content: center;
-        /* Gap */
-        gap: 15px;
-        /* Center text */
-        text-align: center;
+        gap: 10px;
+        /* Pela 15px */
+    }
+
+    nav a {
+        font-size: 15px;
+        /* Pela 17px */
+    }
+
+    .theme-switch button {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
     }
 
     /* ==========================
