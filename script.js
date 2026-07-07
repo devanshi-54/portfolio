@@ -90,57 +90,66 @@ window.addEventListener("load", () => {
    Custom Cursor
 ========================== */
 
-const dot = document.querySelector(".cursor-dot");
-const glow = document.querySelector(".cursor-glow");
+if (window.innerWidth <= 768) {
+    document.querySelector(".cursor-dot")?.remove();
+    document.querySelector(".cursor-glow")?.remove();
+} else {
 
-let mouseX = 0;
-let mouseY = 0;
+    const dot = document.querySelector(".cursor-dot");
+    const glow = document.querySelector(".cursor-glow");
 
-let glowX = 0;
-let glowY = 0;
+    const dot = document.querySelector(".cursor-dot");
+    const glow = document.querySelector(".cursor-glow");
 
-document.addEventListener("mousemove", (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+    let mouseX = 0;
+    let mouseY = 0;
 
-    dot.style.left = mouseX + "px";
-    dot.style.top = mouseY + "px";
-});
+    let glowX = 0;
+    let glowY = 0;
 
-function animateGlow() {
+    document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
 
-    glowX += (mouseX - glowX) * 0.15;
-    glowY += (mouseY - glowY) * 0.15;
+        dot.style.left = mouseX + "px";
+        dot.style.top = mouseY + "px";
+    });
 
-    glow.style.left = glowX + "px";
-    glow.style.top = glowY + "px";
+    function animateGlow() {
 
-    requestAnimationFrame(animateGlow);
+        glowX += (mouseX - glowX) * 0.15;
+        glowY += (mouseY - glowY) * 0.15;
+
+        glow.style.left = glowX + "px";
+        glow.style.top = glowY + "px";
+
+        requestAnimationFrame(animateGlow);
+    }
+
+    animateGlow();
+
+    const hoverItems = document.querySelectorAll(
+        "a, button, .skill-card, .project-card"
+    );
+
+    hoverItems.forEach(item => {
+
+        item.addEventListener("mouseenter", () => {
+
+            glow.style.width = "60px";
+            glow.style.height = "60px";
+
+        });
+
+        item.addEventListener("mouseleave", () => {
+
+            glow.style.width = "35px";
+            glow.style.height = "35px";
+
+        });
+
+    });
 }
-
-animateGlow();
-
-const hoverItems = document.querySelectorAll(
-    "a, button, .skill-card, .project-card"
-);
-
-hoverItems.forEach(item => {
-
-    item.addEventListener("mouseenter", () => {
-
-        glow.style.width = "60px";
-        glow.style.height = "60px";
-
-    });
-
-    item.addEventListener("mouseleave", () => {
-
-        glow.style.width = "35px";
-        glow.style.height = "35px";
-
-    });
-
-});
 
 /* ==========================
    Floating Particles
