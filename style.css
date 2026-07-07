@@ -1139,34 +1139,49 @@ nav {
     /* ==========================
        Navigation Bar
     ========================== */
-
-    nav {
+ nav{
         flex-direction: column;
-        padding: 12px 20px;
-        /* Pela 20px hatu */
+        padding: 12px 15px;
         gap: 12px;
-        /* Pela 20px hatu */
     }
 
-    .logo {
-        font-size: 24px;
-        /* Pela 30px */
+    .logo{
+        font-size: 22px;
     }
 
-    nav ul {
-        gap: 10px;
-        /* Pela 15px */
+    nav ul{
+        display: flex;
+        flex-wrap: nowrap;      /* Ek j line */
+        overflow-x: auto;       /* Scroll if needed */
+        gap: 18px;
+        width: 100%;
+        justify-content: flex-start;
+
+        scrollbar-width: none;      /* Firefox */
+        -ms-overflow-style: none;   /* IE */
     }
 
-    nav a {
-        font-size: 15px;
-        /* Pela 17px */
+    nav ul::-webkit-scrollbar{
+        display: none;
     }
 
-    .theme-switch button {
-        width: 38px;
-        height: 38px;
-        font-size: 16px;
+    nav ul li{
+        flex: 0 0 auto;
+    }
+
+    nav ul li a{
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    .theme-switch{
+        margin: 0;
+    }
+
+    .theme-switch button{
+        width:40px;
+        height:40px;
+        font-size:18px;
     }
 
     /* ==========================
