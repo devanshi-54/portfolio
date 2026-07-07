@@ -98,8 +98,6 @@ if (window.innerWidth <= 768) {
     const dot = document.querySelector(".cursor-dot");
     const glow = document.querySelector(".cursor-glow");
 
-    const dot = document.querySelector(".cursor-dot");
-    const glow = document.querySelector(".cursor-glow");
 
     let mouseX = 0;
     let mouseY = 0;
