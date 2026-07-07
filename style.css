@@ -7,27 +7,21 @@
 ========================================================== */
 
 :root {
-
     /* Background Colors */
     --bg-color: #0F172A;
     --bg-gradient: #1E3A8A;
-
     /* Card Colors */
     --card-color: #1E293B;
     --card-hover: #334155;
-
     /* Primary Color */
     --primary: #3B82F6;
     --primary-hover: #60A5FA;
-
     /* Text Colors */
     --heading: #BFDBFE;
     --text: #FFFFFF;
     --text-light: #CBD5E1;
-
     /* Border Color */
     --border: #60A5FA;
-
     /* Shadow */
     --shadow: rgba(0, 0, 0, .30);
 }
@@ -41,27 +35,21 @@
 ========================================================== */
 
 .blue-theme {
-
     /* Background Colors */
     --bg-color: #2E1065;
     --bg-gradient: #433878;
-
     /* Card Colors */
     --card-color: #4C1D95;
     --card-hover: #5B21B6;
-
     /* Primary Color */
     --primary: #7C3AED;
     --primary-hover: #8B5CF6;
-
     /* Text Colors */
     --heading: #DDD6FE;
     --text: #FFFFFF;
     --text-light: #E5E7EB;
-
     /* Border Color */
     --border: #A78BFA;
-
     /* Shadow */
     --shadow: rgba(0, 0, 0, .30);
 }
@@ -88,12 +76,10 @@ html {
 /* Main Body */
 body {
     font-family: Arial, Helvetica, sans-serif;
-
     /* Background Gradient */
     background: linear-gradient(135deg,
             var(--bg-color),
             var(--bg-gradient));
-
     /* Default Text Color */
     color: var(--text);
 }
@@ -107,22 +93,16 @@ body {
 ========================================================== */
 
 #progress-bar {
-
     /* Always top par fix rahe */
     position: fixed;
-
     top: 0;
     left: 0;
-
     /* Initial width */
     width: 0%;
-
     /* Height of progress bar */
     height: 4px;
-
     /* Primary theme color */
     background: var(--primary);
-
     /* Badha elements karta upar dekhay */
     z-index: 9999;
 }
@@ -136,46 +116,35 @@ body {
 
 /* Theme switch container */
 .theme-switch {
-
     /* Navbar ma left side thi thodi space */
     margin-left: 30px;
 }
 
 /* Theme button */
 .theme-switch button {
-
     /* Button Size */
     width: 45px;
     height: 45px;
-
     /* Remove default border */
     border: none;
-
     /* Circle shape */
     border-radius: 50%;
-
     /* Semi transparent background */
     background: rgba(255, 255, 255, .12);
-
     /* Icon color */
     color: white;
-
     /* Emoji/Icon size */
     font-size: 20px;
-
     /* Hand cursor */
     cursor: pointer;
-
     /* Smooth animation */
     transition: .35s ease;
 }
 
 /* Hover Effect */
 .theme-switch button:hover {
-
     /* Change background to primary color */
     background: var(--primary);
-
     /* Rotate + Zoom effect */
     transform: rotate(180deg) scale(1.1);
 }
@@ -190,23 +159,17 @@ body {
 
 /* Hero container */
 .hero {
-
     /* Screen ni full height cover kare */
     min-height: 100vh;
-
     /* Flexbox use kari content center ma mukva */
     display: flex;
     flex-direction: column;
-
     /* Vertical center */
     justify-content: center;
-
     /* Horizontal center */
     align-items: center;
-
     /* Text center */
     text-align: center;
-
     /* Section ni andar spacing */
     padding: 40px;
 }
@@ -218,70 +181,51 @@ body {
 
 /* Main Heading */
 .hero h1 {
-
     /* Biggest heading */
     font-size: 60px;
-
     margin-bottom: 20px;
-
     color: var(--text);
 }
 
 /* Subtitle */
 .hero h2 {
-
     font-size: 30px;
-
     color: var(--heading);
-
     line-height: 1.6;
-
     margin-bottom: 20px;
 }
 
 /* Typing Text */
 .hero h3 {
-
     font-size: 22px;
-
     color: var(--primary);
-
     margin-bottom: 10px;
 }
 
 /* Description Paragraph */
 .hero p {
-
     /* Paragraph ni maximum width */
     max-width: 650px;
-
     /* Read karvu easy bane */
     line-height: 1.8;
-
     color: var(--text-light);
-
     margin-bottom: 30px;
 }
 
 /* Typing Animation Text */
 #typing {
-
     color: var(--heading);
-
     font-weight: bold;
 }
 
 /* Cursor after typing text */
 #typing::after {
-
     content: "|";
-
     animation: blink .8s infinite;
 }
 
 /* Cursor Blink Animation */
 @keyframes blink {
-
     50% {
         opacity: 0;
     }
@@ -297,48 +241,36 @@ body {
 
 /* Button Icon */
 .btn i {
-
     /* Icon ane text vachche gap */
     margin-right: 8px;
 }
 
 /* Main Button */
 .btn {
-
     /* Inline-block thi width content jetli rahe */
     display: inline-block;
-
     /* Andar ni spacing (Top-Bottom Left-Right) */
     padding: 15px 30px;
-
     /* Theme no primary color */
     background: var(--primary);
-
     /* Text color */
     color: white;
-
     /* Underline remove */
     text-decoration: none;
-
     /* Rounded corners */
     border-radius: 10px;
-
     /* Text size */
     font-size: 18px;
-
     /* Bold text */
     font-weight: 600;
-
     /* Smooth animation */
     transition: 0.3s ease;
 }
 
 /* Hover Effect */
 .btn:hover {
-
     /* Background color change */
     background: var(--primary-hover);
-
     /* Button thodu upar move thay */
     transform: translateY(-5px);
 }
@@ -353,29 +285,22 @@ body {
 
 /* Logo Styling */
 .logo {
-
     /* Text size */
     font-size: 30px;
-
     /* Bold text */
     font-weight: bold;
-
     /* Theme primary color */
     color: var(--primary);
-
     /* Mouse pointer */
     cursor: pointer;
-
     /* Smooth animation */
     transition: .3s ease;
 }
 
 /* Hover Effect */
 .logo:hover {
-
     /* Color change */
     color: var(--primary-hover);
-
     /* Slight Zoom */
     transform: scale(1.05);
 }
@@ -390,40 +315,28 @@ body {
 
 /* Main Navbar */
 nav {
-
     /* Scroll karta pan top par stick rahe */
     position: sticky;
-
     /* Top thi 0px */
     top: 0;
-
     /* Bija elements karta upar dekhay */
     z-index: 1000;
-
     /* Flexbox */
     display: flex;
-
     /* Logo left, menu right */
     justify-content: space-between;
-
     /* Vertically center */
     align-items: center;
-
     /* Full width */
     width: 100%;
-
     /* Inside spacing */
     padding: 18px 80px;
-
     /* Transparent dark background */
     background: rgba(15, 23, 42, .90);
-
     /* Glassmorphism Blur */
     backdrop-filter: blur(12px);
-
     /* Bottom border */
     border-bottom: 1px solid rgba(255, 255, 255, .08);
-
     /* Smooth animation */
     transition: all .35s ease;
 }
@@ -438,51 +351,38 @@ nav {
 
 /* Navigation Menu List */
 nav ul {
-
     /* Menu ne horizontal line ma mukva */
     display: flex;
-
     /* Items vertically center */
     align-items: center;
-
     /* Darek menu vachche gap */
     gap: 35px;
-
     /* Default bullet remove */
     list-style: none;
-
     /* Default margin remove */
     margin: 0;
-
     /* Default padding remove */
     padding: 0;
 }
 
 /* List Item */
 nav ul li {
-
     /* Bullet point remove */
     list-style: none;
 }
 
 /* Navigation Links */
 nav a {
-
     /* Underline animation mate */
     position: relative;
-
     /* Default underline remove */
     text-decoration: none;
-
     /* Text color */
     color: var(--text);
-
     /* Font size */
     font-size: 17px;
-
     /* Medium bold */
     font-weight: 500;
-
     /* Smooth transition */
     transition: .3s ease;
 }
@@ -496,35 +396,26 @@ nav a {
 
 /* Link Hover */
 nav a:hover {
-
     /* Hover karta primary color */
     color: var(--primary);
 }
 
 /* Underline Create */
 nav a::after {
-
     /* Empty content */
     content: "";
-
     /* Link ni andar position thay */
     position: absolute;
-
     /* Left side thi start */
     left: 0;
-
     /* Text ni niche */
     bottom: -6px;
-
     /* Starting ma invisible */
     width: 0%;
-
     /* Underline thickness */
     height: 2px;
-
     /* Underline color */
     background: var(--primary);
-
     /* Smooth animation */
     transition: .3s ease;
 }
@@ -532,14 +423,12 @@ nav a::after {
 /* Hover & Active State */
 nav a:hover::after,
 nav a.active::after {
-
     /* Full width underline */
     width: 100%;
 }
 
 /* Active Link Color */
 nav a.active {
-
     color: var(--primary);
 }
 
@@ -553,13 +442,10 @@ nav a.active {
 
 /* Navbar After Scroll */
 nav.scrolled {
-
     /* Top-Bottom padding ochhi kari */
     padding: 14px 80px;
-
     /* Background thodu vadhu opaque */
     background: rgba(15, 23, 42, .97);
-
     /* Shadow add kari depth create kare */
     box-shadow: 0 8px 25px rgba(0, 0, 0, .25);
 }
@@ -573,30 +459,23 @@ nav.scrolled {
 
 /* Navbar Animation Apply */
 nav {
-
     /* Animation Name */
     animation: navDrop .8s ease;
 }
 
 /* Animation Frames */
 @keyframes navDrop {
-
     /* Starting Position */
     from {
-
         /* Completely invisible */
         opacity: 0;
-
         /* 60px upar */
         transform: translateY(-60px);
     }
-
     /* Ending Position */
     to {
-
         /* Fully visible */
         opacity: 1;
-
         /* Original position */
         transform: translateY(0);
     }
@@ -612,93 +491,69 @@ nav {
 
 /* Main About Section */
 .about {
-
     /* Top-Bottom = 100px
        Left-Right = 10% */
     padding: 100px 10%;
-
     /* Badho text center */
     text-align: center;
 }
 
 /* About Heading */
 .about h2 {
-
     /* Center heading */
     text-align: center;
-
     /* Heading size */
     font-size: 42px;
-
     /* Theme heading color */
     color: var(--heading);
-
     /* Heading niche spacing */
     margin-bottom: 50px;
 }
 
 /* About Paragraph */
 .about p {
-
     /* Paragraph ni maximum width */
     max-width: 850px;
-
     /* Auto margin thi center */
     margin: 20px auto;
-
     /* Text size */
     font-size: 18px;
-
     /* Line vachche spacing */
     line-height: 1.8;
-
     /* Light text color */
     color: var(--text-light);
 }
 
 /* About Card */
 .about-card {
-
     /* Flexbox layout */
     display: flex;
-
     /* Vertical center */
     align-items: center;
-
     /* Horizontal center */
     justify-content: center;
-
     /* Image ane text vachche gap */
     gap: 50px;
-
     /* Card background */
     background: var(--card-color);
-
     /* Glass effect */
     backdrop-filter: blur(12px);
-
     /* Theme border */
     border: 1px solid var(--border);
-
     /* Inner spacing */
     padding: 40px;
-
     /* Rounded corners */
     border-radius: 20px;
-
     /* Shadow */
     box-shadow: 0 10px 30px var(--shadow);
 }
 
 /* Card Hover */
 .about-card:hover {
-
     /* Card thodu upar */
     transform: translateY(-8px);
-
     /* Smooth animation */
     transition: .4s;
-
     /* Shadow vadhu */
     box-shadow: 0 20px 40px var(--shadow);
 }
@@ -712,85 +567,66 @@ nav {
 
 /* Left Side Image */
 .about-left img {
-
     /* Image width */
     width: 250px;
-
     /* Image height */
     height: 250px;
-
     /* Circle image */
     border-radius: 50%;
-
     /* Image crop properly */
     object-fit: cover;
-
     /* Theme border */
     border: 4px solid var(--primary);
 }
 
 /* Right Side Container */
 .about-right {
-
     /* Remaining space occupy kare */
     flex: 1;
 }
 
 /* About Name */
 .about-right h3 {
-
     /* Heading size */
     font-size: 32px;
-
     /* Bottom spacing */
     margin-bottom: 20px;
 }
 
 /* Description */
 .about-right p {
-
     /* Text size */
     font-size: 18px;
-
     /* Line spacing */
     line-height: 1.8;
-
     /* Left align */
     text-align: left;
-
     /* Theme text color */
     color: var(--text-light);
-
     /* Bottom spacing */
     margin-bottom: 15px;
 }
 
 /* Personal Information */
 .info {
-
     /* Top spacing */
     margin-top: 20px;
 }
 
 /* Each Info Line */
 .info p {
-
     /* Center text */
     text-align: center;
-
     /* Bottom spacing */
     margin-bottom: 12px;
 }
 
 /* Small Subtitle */
 .subtitle {
-
     /* Theme heading color */
     color: var(--heading);
-
     /* Font size */
     font-size: 22px;
-
     /* Bottom spacing */
     margin-bottom: 25px;
 }
@@ -804,102 +640,80 @@ nav {
 
 /* Skills Section */
 .skills {
-
     /* Top-Bottom spacing */
     padding: 100px 10%;
 }
 
 /* Skills Heading */
 .skills h2 {
-
     /* Center heading */
     text-align: center;
-
     /* Large heading */
     font-size: 42px;
-
     /* Theme heading color */
     color: var(--heading);
-
     /* Gap below heading */
     margin-bottom: 50px;
 }
 
 /* Skills Grid Container */
 .skills-container {
-
     /* CSS Grid */
     display: grid;
-
     /* Responsive columns */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-
     /* Space between cards */
     gap: 30px;
 }
 
 /* Individual Skill Card */
 .skill-card {
-
     /* Card background */
     background: var(--card-color);
-
     /* Rounded corners */
     border-radius: 18px;
-
     /* Inner spacing */
     padding: 35px;
-
     /* Center all content */
     text-align: center;
-
     /* Smooth animation */
     transition: 0.4s;
-
     /* Transparent border */
     border: 1px solid transparent;
 }
 
 /* Card Hover Effect */
 .skill-card:hover {
-
     /* Change background on hover */
     background: var(--card-hover);
 }
 
 /* Skill Icon */
 .skill-icon {
-
     /* Large icon */
     font-size: 60px;
-
     /* Space below icon */
     margin-bottom: 20px;
-
     /* Smooth animation */
     transition: 0.3s ease;
 }
 
 /* Icon Animation */
 .skill-card:hover .skill-icon {
-
     /* Zoom + Rotate */
     transform: scale(1.15) rotate(5deg);
 }
 
 /* Skill Name */
 .skill-card h3 {
-
     /* Gap below title */
     margin-bottom: 10px;
-
     /* White color */
     color: var(--text);
 }
 
 /* Skill Description */
 .skill-card p {
-
     /* Light text color */
     color: var(--text-light);
 }
@@ -913,190 +727,144 @@ nav {
 
 /* Projects Section */
 #projects {
-
     /* Top-Bottom ane Left-Right spacing */
     padding: 80px 10%;
 }
 
 /* Projects Grid Container */
 .project-container {
-
     /* CSS Grid Layout */
     display: grid;
-
     /* Responsive columns */
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
     /* Space between cards */
     gap: 30px;
-
     /* Gap below heading */
     margin-top: 50px;
 }
 
 /* Individual Project Card */
 .project-card {
-
     /* Card background */
     background: var(--card-color);
-
     /* Rounded corners */
     border-radius: 20px;
-
     /* Hide overflowing image */
     overflow: hidden;
-
     /* Smooth animation */
     transition: .4s;
 }
 
 /* Project Image */
 .project-card img {
-
     /* Full width image */
     width: 100%;
-
     /* Fixed image height */
     height: 220px;
-
     /* Crop image properly */
     object-fit: cover;
 }
 
 /* Project Content */
 .project-content {
-
     /* Inner spacing */
     padding: 25px;
 }
 
 /* Project Title */
 .project-content h3 {
-
     /* White heading */
     color: var(--text);
-
     /* Space below heading */
     margin-bottom: 15px;
 }
 
 /* Project Description */
 .project-content p {
-
     /* Light text color */
     color: var(--text-light);
-
     /* Better readability */
     line-height: 1.6;
 }
 
 /* Technology Stack Container */
 .tech-stack {
-
     /* Flex layout */
     display: flex;
-
     /* Wrap to next line if needed */
     flex-wrap: wrap;
-
     /* Space between tags */
     gap: 10px;
-
     /* Vertical spacing */
     margin: 20px 0;
 }
 
 /* Individual Tech Tag */
 .tech-stack span {
-
     /* Inline badge */
     display: inline-block;
-
     /* Primary color background */
     background: var(--primary);
-
     /* White text */
     color: var(--text);
-
     /* Inner spacing */
     padding: 8px 14px;
-
     /* Rounded pill shape */
     border-radius: 30px;
-
     /* Remove default margin */
     margin: 0;
-
     /* Small font */
     font-size: 14px;
 }
 
 /* Project Buttons */
 .project-buttons a {
-
     /* Remove underline */
     text-decoration: none;
-
     /* Text color */
     color: var(--text);
-
     /* Button background */
     background: var(--primary);
-
     /* Inner spacing */
     padding: 12px 25px;
-
     /* Rounded button */
     border-radius: 8px;
-
     /* Button behaves like block */
     display: inline-block;
-
     /* Smooth hover animation */
     transition: .3s;
 }
 
 /* Button Hover */
 .project-buttons a:hover {
-
     /* Change background */
     background: var(--primary-hover);
 }
 
 /* Card Hover Animation */
 .project-card:hover {
-
     /* Lift card */
     transform: translateY(-10px);
-
     /* Shadow effect */
     box-shadow: 0 15px 35px var(--shadow);
 }
 
 /* Featured Project Badge */
 .featured {
-
     /* Inline badge */
     display: inline-block;
-
     /* Primary background */
     background: var(--primary);
-
     /* White text */
     color: var(--text);
-
     /* Padding */
     padding: 6px 12px;
-
     /* Rounded shape */
     border-radius: 20px;
-
     /* Small text */
     font-size: 13px;
-
     /* Bold text */
     font-weight: bold;
-
     /* Space below badge */
     margin-bottom: 12px;
 }
@@ -1110,81 +878,62 @@ nav {
 
 /* Contact Section */
 .contact {
-
     /* Top-Bottom ane Left-Right spacing */
     padding: 100px 10%;
-
     /* Center all text */
     text-align: center;
 }
 
 /* Contact Heading */
 .contact h2 {
-
     /* Large heading */
     font-size: 42px;
-
     /* Theme heading color */
     color: var(--heading);
-
     /* Space below heading */
     margin-bottom: 20px;
 }
 
 /* Contact Description */
 .contact p {
-
     /* Light text color */
     color: var(--text-light);
-
     /* Space below paragraph */
     margin-bottom: 40px;
 }
 
 /* Contact Links Container */
 .contact-links {
-
     /* Flex layout */
     display: flex;
-
     /* Center horizontally */
     justify-content: center;
-
     /* Space between buttons */
     gap: 25px;
-
     /* Wrap buttons on small screens */
     flex-wrap: wrap;
 }
 
 /* Individual Contact Button */
 .contact-links a {
-
     /* Button background */
     background: var(--primary);
-
     /* White text */
     color: white;
-
     /* Remove underline */
     text-decoration: none;
-
     /* Inner spacing */
     padding: 15px 30px;
-
     /* Rounded corners */
     border-radius: 12px;
-
     /* Smooth animation */
     transition: .3s;
 }
 
 /* Hover Effect */
 .contact-links a:hover {
-
     /* Hover background */
     background: var(--primary-hover);
-
     /* Lift button */
     transform: translateY(-5px);
 }
@@ -1198,115 +947,90 @@ nav {
 
 /* Certifications Section */
 .certifications {
-
     /* Top-Bottom ane Left-Right spacing */
     padding: 100px 10%;
-
     /* Center align content */
     text-align: center;
 }
 
 /* Section Heading */
 .certifications h2 {
-
     /* Large heading */
     font-size: 42px;
-
     /* Space below heading */
     margin-bottom: 50px;
 }
 
 /* Certificates Grid Container */
 .certificate-container {
-
     /* CSS Grid Layout */
     display: grid;
-
     /* Responsive columns */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
     /* Space between cards */
     gap: 30px;
 }
 
 /* Individual Certificate Card */
 .certificate-card {
-
     /* Card background */
     background: var(--card-color);
-
     /* Inner spacing */
     padding: 30px;
-
     /* Rounded corners */
     border-radius: 20px;
-
     /* Smooth animation */
     transition: .3s;
 }
 
 /* Hover Effect */
 .certificate-card:hover {
-
     /* Lift card */
     transform: translateY(-8px);
-
     /* Hover background */
     background: var(--card-hover);
 }
 
 /* Certificate Icon */
 .certificate-card i {
-
     /* Large icon */
     font-size: 50px;
-
     /* Google blue color */
     color: #4285F4;
-
     /* Space below icon */
     margin-bottom: 20px;
 }
 
 /* Certificate Title */
 .certificate-card h3 {
-
     /* Space below title */
     margin-bottom: 10px;
 }
 
 /* Certificate Description */
 .certificate-card p {
-
     /* Space below paragraph */
     margin-bottom: 20px;
 }
 
 /* View Certificate Button */
 .certificate-card a {
-
     /* Remove underline */
     text-decoration: none;
-
     /* White text */
     color: white;
-
     /* Theme background */
     background: var(--primary);
-
     /* Inner spacing */
     padding: 10px 20px;
-
     /* Rounded button */
     border-radius: 8px;
-
     /* Smooth animation */
     transition: .3s;
 }
 
 /* Button Hover */
 .certificate-card a:hover {
-
     /* Brighter color */
     background: var(--primary-hover);
 }
@@ -1320,78 +1044,60 @@ nav {
 
 /* Footer */
 .footer {
-
     /* Inner spacing */
     padding: 30px;
-
     /* Center align content */
     text-align: center;
-
     /* Dark transparent background */
     background: rgba(0, 0, 0, .15);
-
     /* Space above footer */
     margin-top: 80px;
-
     /* Top border */
     border-top: 1px solid var(--border);
 }
 
 /* Footer Paragraph */
 .footer p {
-
     /* Light text color */
     color: var(--text-light);
-
     /* Space below paragraph */
     margin-bottom: 15px;
 }
 
 /* Social Icons Container */
 .footer-icons {
-
     /* Flex layout */
     display: flex;
-
     /* Center horizontally */
     justify-content: center;
-
     /* Space between icons */
     gap: 20px;
 }
 
 /* Individual Social Icon */
 .footer-icons a {
-
     /* Icon color */
     color: var(--text);
-
     /* Large icon size */
     font-size: 24px;
-
     /* Smooth animation */
     transition: .3s;
 }
 
 /* Hover Effect */
 .footer-icons a:hover {
-
     /* Change icon color */
     color: var(--primary-hover);
-
     /* Lift icon slightly */
     transform: translateY(-3px);
 }
 
 /* Footer Bottom Text */
 .footer-text {
-
     /* Space above text */
     margin-top: 20px;
-
     /* Small font */
     font-size: 14px;
-
     /* Light text color */
     color: var(--text-light);
 }
@@ -1433,31 +1139,23 @@ nav {
     ========================== */
 
     nav {
-
         /* Navbar vertical bane */
         flex-direction: column;
-
         /* Inner spacing */
         padding: 20px;
-
         /* Gap between logo & menu */
         gap: 20px;
     }
 
     nav ul {
-
         /* Flex layout */
         display: flex;
-
         /* Next line ma jai sake */
         flex-wrap: wrap;
-
         /* Center align */
         justify-content: center;
-
         /* Gap */
         gap: 15px;
-
         /* Center text */
         text-align: center;
     }
@@ -1467,36 +1165,28 @@ nav {
     ========================== */
 
     .hero {
-
         /* Height auto */
         min-height: auto;
-
         /* Mobile spacing */
         padding: 30px 20px;
     }
 
     .hero h1 {
-
         /* Smaller heading */
         font-size: 40px;
-
         line-height: 1.2;
     }
 
     .hero h2 {
-
         font-size: 22px;
     }
 
     .hero h3 {
-
         font-size: 18px;
     }
 
     .hero p {
-
         font-size: 15px;
-
         line-height: 1.8;
     }
 
@@ -1505,78 +1195,58 @@ nav {
     ========================== */
 
     .buttons {
-
         display: flex;
-
         flex-direction: row;
-
         justify-content: center;
-
         gap: 15px;
     }
 
     .btn {
-
         padding: 12px 20px;
-
         font-size: 16px;
     }
 
     /* ==========================
        About Section
     ========================== */
-
     .about-card {
-
         /* Image upar text niche */
         flex-direction: column;
-
         text-align: center;
     }
 
     .about-left img {
-
         width: 180px;
-
         height: 180px;
     }
 
     .about-right p {
-
         text-align: center;
     }
 
     /* ==========================
        Projects
     ========================== */
-
     .project-container {
-
         grid-template-columns: 1fr;
     }
 
     .project-card img {
-
         height: 180px;
     }
 
     /* ==========================
        Skills
     ========================== */
-
     .skills-container {
-
         grid-template-columns: 1fr;
     }
 
     /* ==========================
        Contact
     ========================== */
-
     .contact-links {
-
         flex-direction: column;
-
         align-items: center;
     }
 }
@@ -1594,23 +1264,18 @@ nav {
 
 /* Hidden state */
 .hidden {
-
     /* Invisible */
     opacity: 0;
-
     /* Slightly down */
     transform: translateY(60px);
-
     /* Smooth animation */
     transition: all .8s ease;
 }
 
 /* Visible state */
 .show {
-
     /* Fully visible */
     opacity: 1;
-
     /* Original position */
     transform: translateY(0);
 }
@@ -1620,17 +1285,14 @@ nav {
 ========================== */
 
 #typing::after {
-
     /* Cursor symbol */
     content: "|";
-
     /* Infinite blinking */
     animation: blink .8s infinite;
 }
 
 /* Blink Animation */
 @keyframes blink {
-
     50% {
         opacity: 0;
     }
@@ -1641,23 +1303,18 @@ nav {
 ========================== */
 
 #loader {
-
     /* Cover full screen */
     position: fixed;
     inset: 0;
-
     /* Background color */
     background: var(--bg-color);
-
     /* Center content */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     /* Top layer */
     z-index: 9999;
-
     /* Smooth hide animation */
     transition: opacity .8s ease,
         visibility .8s ease;
@@ -1665,53 +1322,38 @@ nav {
 
 /* Loader Logo */
 .loader-logo {
-
     width: 90px;
     height: 90px;
-
     border-radius: 50%;
-
     background: var(--primary);
-
     color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-size: 36px;
     font-weight: bold;
-
     margin-bottom: 25px;
 }
 
 /* Loading Bar */
 .loader-bar {
-
     width: 260px;
     height: 8px;
-
     background: rgba(255, 255, 255, .15);
-
     border-radius: 20px;
-
     overflow: hidden;
 }
 
 /* Progress Fill */
 .loader-fill {
-
     width: 0%;
     height: 100%;
-
     background: var(--primary);
-
     animation: loading 2s linear forwards;
 }
 
 /* Progress Animation */
 @keyframes loading {
-
     from {
         width: 0%;
     }
@@ -1723,7 +1365,6 @@ nav {
 
 /* Hide Loader */
 .loader-hide {
-
     opacity: 0;
     visibility: hidden;
 }
@@ -1733,42 +1374,27 @@ nav {
 ========================== */
 
 .cursor-dot {
-
     width: 10px;
     height: 10px;
-
     background: var(--primary);
-
     border-radius: 50%;
-
     position: fixed;
-
     pointer-events: none;
-
     z-index: 99999;
-
     transform: translate(-50%, -50%);
 }
 
 .cursor-glow {
-
     width: 35px;
     height: 35px;
-
     background: color-mix(in srgb,
             var(--primary) 25%,
             transparent);
-
     border-radius: 50%;
-
     position: fixed;
-
     pointer-events: none;
-
     z-index: 99998;
-
     transform: translate(-50%, -50%);
-
     transition:
         width .25s,
         height .25s,
@@ -1785,87 +1411,56 @@ body {
 ========================== */
 
 #particles {
-
     position: fixed;
-
     inset: 0;
-
     overflow: hidden;
-
     pointer-events: none;
-
     z-index: -1;
 }
 
 .particle {
-
     position: absolute;
-
     width: 6px;
     height: 6px;
-
     border-radius: 50%;
-
     background: var(--primary);
-
     opacity: .25;
-
     animation: float 18s linear infinite;
 }
 
 /* Floating Animation */
 @keyframes float {
-
     from {
-
         transform: translateY(100vh);
-
     }
 
     to {
-
         transform: translateY(-100px);
-
     }
 }
 
 /* ==========================
    Back To Top Button
 ========================== */
-
 #topBtn {
-
     position: fixed;
-
     bottom: 30px;
     right: 30px;
-
     width: 50px;
     height: 50px;
-
     border: none;
-
     border-radius: 50%;
-
     background: var(--primary);
-
     color: white;
-
     font-size: 20px;
-
     display: none;
-
     z-index: 999;
-
     transition: .3s;
-
     box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
 }
 
 /* Hover Effect */
 #topBtn:hover {
-
     background: var(--primary-hover);
-
     transform: translateY(-5px) scale(1.08);
 }
